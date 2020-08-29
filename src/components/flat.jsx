@@ -1,15 +1,14 @@
 import React from 'react';
 
 
-const Flat = ({ flats }) => {
+const Flat = ({ flat }) => {
   return (
-    <div>
-      {flats.map((flat, index) => (
-        <div className="card" key={index} style={{ backgroundImage: `URL(${flat.imageUrl})` }}>
-          <h1>{flat.name}</h1>
-          <p>{flat.price}</p>
-        </div>
-      ))}
+    <div className="card" style={{ backgroundImage: `URL(${flat.imageUrl})` }}>
+      <h3>
+        {flat.price}
+        <span> <strong>{flat.priceCurrency}</strong></span>
+      </h3>
+      <h2>{flat.name}</h2>
     </div>
   );
 };

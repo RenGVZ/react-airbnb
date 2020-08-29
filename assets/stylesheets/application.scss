@@ -32,6 +32,15 @@ body {
     width: calc(50% - 10px);
     margin-right: 10px;
     margin-bottom: 10px;
+    padding-left: 10px;
+  }
+  h2 {
+    position: relative;
+    bottom: 0;
+  }
+  h3 {
+    position: relative;
+    top: 0;
   }
 }
 
