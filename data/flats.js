@@ -1,5 +1,5 @@
 
-const flats = [
+export const flats = [
   {
     name: "Charm at the Steps of the Sacre Coeur/Montmartre",
     imageUrl: "https://raw.githubusercontent.com/lewagon/flats-boilerplate/master/images/flat1.jpg",

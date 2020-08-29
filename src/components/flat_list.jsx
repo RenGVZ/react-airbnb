@@ -1,21 +1,10 @@
 import React from 'react';
 import Flat from './flat';
 
-const FlatList = (props) => {
-  const renderFlats = () => {
-    return props.flats.map((flat, index) => {
-      return (
-        <Flat
-          flat={flat}
-          key={flat.lat}
-        />
-      );
-    });
-  };
-
+const FlatList = ({ flats }) => {
   return (
     <div>
-      { renderFlats() }
+      <Flat flats={flats} />
     </div>
   );
 };
