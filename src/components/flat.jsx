@@ -1,9 +1,12 @@
 import React from 'react';
 
 
-const Flat = ({ flat }) => {
+const Flat = ({ flat, clicked }) => {
+  const flatChange = (event) => {
+    clicked(event.target);
+  };
   return (
-    <div className="card" style={{ backgroundImage: `URL(${flat.imageUrl})` }}>
+    <div onClick={flatChange} className="card" style={{ backgroundImage: `URL(${flat.imageUrl})` }}>
       <h3>
         {flat.price}
         <span> <strong>{flat.priceCurrency}</strong></span>

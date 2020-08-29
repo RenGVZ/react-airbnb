@@ -8,13 +8,21 @@ class App extends Component {
     super(props);
 
     this.state = {
+      selectedFlat: null
     };
+  }
+
+  setNewFlat = (e) => {
+    console.log(e);
+    // this.setState({
+    //   selectedFlat: e.target
+    // });
   }
 
   render() {
     return (
       <div>
-        <FlatList flats={flats} />
+        <FlatList flats={flats} clicked={this.setNewFlat} />
         <div className="map-container">
           <GoogleMapReact />
         </div>
