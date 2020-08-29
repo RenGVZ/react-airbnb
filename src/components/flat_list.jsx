@@ -3,7 +3,7 @@ import Flat from './flat';
 
 const FlatList = ({ flats }) => {
   return (
-    <div>
+    <div className="flat-list">
       <Flat flats={flats} />
     </div>
   );

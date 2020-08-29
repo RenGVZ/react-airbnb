@@ -5,9 +5,10 @@ const Flat = ({ flats }) => {
   return (
     <div>
       {flats.map((flat, index) => (
-        <ul key={index}>
-          <li>{flat.name}</li>
-        </ul>
+        <div className="card" key={index} style={{ backgroundImage: `URL(${flat.imageUrl})` }}>
+          <h1>{flat.name}</h1>
+          <p>{flat.price}</p>
+        </div>
       ))}
     </div>
   );

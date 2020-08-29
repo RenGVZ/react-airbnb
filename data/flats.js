@@ -47,7 +47,7 @@ export const flats = [
     priceCurrency: "EUR",
     lat: 48.827855,
     lng: 2.350774
-  }
+  },
 ];
 
 export default flats;
