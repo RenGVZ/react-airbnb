@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 
 class Marker extends Component {
   render() {
-    return (
+    return(
       <div className="marker"></div>
     );
-  };
-};
+  }
+}
 
 export default Marker;
