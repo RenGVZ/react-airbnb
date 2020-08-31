@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 
 class Flat extends Component {
   handleClick = () => {
-    this.props.selectFlat(this.props.index);
-    console.log(this.props.selectedFlat)
+    const { index, selectFlat } = this.props;
+    selectFlat(index);
   }
+
   render() {
     const { flat, selectedFlat } = this.props;
     return (
@@ -13,7 +14,12 @@ class Flat extends Component {
           <h2>{flat.name}</h2>
         </div>
         <div className="card-category">
-          <p>{flat.price} <strong>{flat.priceCurrency}</strong></p>
+          <p>
+            {flat.price}
+            <strong>
+              {flat.priceCurrency}
+            </strong>
+          </p>
         </div>
       </div>
     );
