@@ -8,9 +8,9 @@ const FlatList = ({ flats, selectedFlat, selectFlat }) => {
         <Flat
           flat={flat}
           index={index}
+          key={flat.name}
+          selectedFlat={selectedFlat.name === flat.name}
           selectFlat={selectFlat}
-          selectedFlat={flat.name === selectedFlat.name}
-          key={flat.lat}
         />
       ))}
     </div>
